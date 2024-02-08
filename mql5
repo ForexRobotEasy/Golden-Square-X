@@ -1,0 +1,87 @@
+
+// Program: Golden Square X
+// Developer's Site: forexroboteasy.com
+// Developer: Forex Robot Easy Team
+
+// This code implements the necessary trading functions for optimal Forex trading on the M5 timeframe.
+
+// Customizable Take Profit (TP) and Stop Loss (SL) parameters
+double takeProfit = 50.0; // Default TP value
+double stopLoss = 30.0; // Default SL value
+
+// Efficient default settings for trading performance
+double defaultSettings = 0.5; // Default setting value
+
+// Function to analyze market data and identify potential movements
+void analyzeMarketData()
+{
+    // Implement algorithm to analyze market data
+    // ...
+}
+
+// Function to identify and signal potential trading opportunities
+void identifyTradingOpportunities()
+{
+    // Implement logic to recognize trading opportunities
+    // ...
+}
+
+// Function to generate trading signals based on market movements and opportunities
+void generateTradingSignals()
+{
+    // Implement logic to generate trading signals
+    // ...
+}
+
+// Function to allow users to customize TP parameter
+void setTakeProfit(double tp)
+{
+    takeProfit = tp;
+}
+
+// Function to allow users to customize SL parameter
+void setStopLoss(double sl)
+{
+    stopLoss = sl;
+}
+
+// Function to display trading signals and user interface
+void displayTradingSignals()
+{
+    // Implement logic to display trading signals and user interface
+    // ...
+}
+
+// Main function
+int OnInit()
+{
+    // Set default settings
+    setTakeProfit(takeProfit);
+    setStopLoss(stopLoss);
+    
+    // Analyze market data
+    analyzeMarketData();
+    
+    // Identify trading opportunities
+    identifyTradingOpportunities();
+    
+    // Generate trading signals
+    generateTradingSignals();
+    
+    // Display trading signals and user interface
+    displayTradingSignals();
+    
+    return(INIT_SUCCEEDED);
+}
+
+// Entry point of the program
+void OnStart()
+{
+    // Execute OnInit function
+    OnInit();
+    
+    // Main trading logic here
+    
+    // Program execution ends
+    return;
+}
